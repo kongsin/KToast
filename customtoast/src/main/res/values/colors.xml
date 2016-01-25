@@ -25,4 +25,14 @@
     <color name="color_red">#ef4136</color>
     <color name="color_green">#76c043</color>
 
+    <color name="teal">#009688</color>
+    <color name="light_blue">#0288D1</color>
+    <color name="green">#4CAF50</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="deep_orange">#FF5722</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="blue_gray">#607D8B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
 </resources>
