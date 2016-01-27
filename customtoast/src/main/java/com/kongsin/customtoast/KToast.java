@@ -127,7 +127,12 @@ public class KToast implements GestureDetector.OnGestureListener {
     private final Runnable runnable = new Runnable() {
         @Override
         public void run() {
-            mContainer.startAnimation(animationOut);
+            if (mContainer.getVisibility() == View.VISIBLE) {
+                mContainer.startAnimation(animationOut);
+            } else {
+                mContainer.setVisibility(View.GONE);
+                mContainer.setX(0);
+            }
         }
     };
 
