@@ -9,6 +9,8 @@ import com.kongsin.customtoast.KToast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private KToast kToast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                KToast kToast = new KToast(MainActivity.this);
-                kToast.show(getString(R.string.app_name), "Test", null, null, KToast.DURATION_SHORT);
+                kToast = new KToast(MainActivity.this);
+                kToast.show(null, "Test", null, null, KToast.DURATION_SHORT);
             }
         });
     }
